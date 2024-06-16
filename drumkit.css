@@ -1,0 +1,354 @@
+@import url(https://fonts.googleapis.com/css?family=Handlee|Pacifico);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+		background-image: url('concert-background-dd0syeox7rmi78l0.jpg'); 
+		background-size: cover; 
+		background-repeat: no-repeat; 
+		background-position: center center; 
+		height: 790px;
+		margin: 0; 
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+	}
+	  header {
+		display: flex;
+		background-color: #333;
+		color: #fff;
+		padding: 10px 0;
+		text-align: center;
+		border-color: #5a0b0d;
+		border-radius: 10px;
+		border-width: 5px;
+		border-style: double;
+		height: 170px;
+	  }
+	  
+	  .navbar {
+		margin-top: 50px;
+		margin-left: 600px;
+	
+	  }
+	  
+	  .nav-list {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	  }
+	  
+	  .nav-item {
+		margin: 0 15px;
+	  }
+	  
+	  .nav-item a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 23px;
+		transition: color 0.3s;
+	  }
+	  
+	  .nav-item a:hover {
+		color: red;
+	  }
+	  
+	  
+.main-wrapper {
+	margin: 30px auto 0;
+	width: 1080px;
+	text-align: center;
+}
+
+.main-title {
+	margin-top: 100px;
+	margin-left: 70px;
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	font-size: 3.2em;
+	color: beige;
+	text-shadow: 1px 1px 1px #5a0b0d;
+	text-decoration: none;
+}
+
+.drum-kit-wrapper {
+	width: 600px;
+	border-radius: 10px;
+	border-style: double;
+	border-width: 5px;
+	border-color:  #5a0b0d;
+	position: relative;
+	margin-left: 100px;
+	background-color: white;
+}
+
+.drum-kit {
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+
+.crash-cymbal {
+	position: absolute;
+	top: 110px;
+    left: 78px;
+    transform: rotate(-7.2deg) scale(1.5);
+    transition: all ease-in-out .042s;
+}
+
+.hihat-top-cymbal {
+	position: absolute;
+    top: 155px;
+    right: 69px;
+    transform: scale(1.35);
+    z-index: 0;
+    transition: all ease-in-out .042s;
+}
+
+.key {
+	display: inline-block;
+	transition: all ease-in-out .042s;
+	position: absolute;
+	background: #eaeaea;
+    font-size: 1.5em;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+    color: #444;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.65);
+    z-index: 2;
+}
+
+.key p:hover {
+	color: red;
+	
+}
+.key.kick {
+	top: 355px;
+    right: 250px;
+}
+
+.key.kick2 {
+    top: 355px;
+    right: 308px;
+}
+
+.key.snare {
+	right: 145px;
+    top: 280px;
+}
+
+.key.tom-high {
+	right: 227px;
+    top: 240px;
+}
+
+.key.tom-mid {
+	left: 222px;
+    top: 220px;
+}
+
+.key.tom-low {
+	top: 320px;
+    left: 133px;
+}
+
+.key.crash {
+	top: 80px;
+    left: 75px;
+}
+
+.key.ride {
+	left: 165px;
+    top: 87px;
+}
+
+.key.hihat-open {
+	right: 165px;
+    top: 144px;
+}
+
+.key.hihat-close {
+	right: 60px;
+    top: 150px;
+}
+
+.playing {
+	transform: scale(1.12);
+}
+
+.key-map-wrapper {
+	position:absolute;
+    height: 560px;
+    background:  #5a0b0d;
+    width: 250px;
+    z-index: 3;
+	right: 120px;
+	border-radius: 10px;
+	border-style: double;
+	border-width: 5px;
+	border-color: white;
+	padding-left: 20px;
+}
+
+.key-map-wrapper > h2 {
+	color: #fff;
+	font-family: 'Handlee', cursive;
+	margin-bottom: 35px;
+	border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+.key-map-list {
+	list-style: none;
+	color: #fff;
+	text-align: left;
+}
+
+.key-map-list > li {
+	margin-bottom: 25px;
+}
+
+.key-code {
+	color: #444;
+    background-color: #eaeaea;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+	padding: 4px;
+}
+
+.key-sound {
+	font-size: 1.2em;
+	margin-left: 10px;
+	font-family: 'Handlee', cursive;
+	vertical-align: middle;
+}
+h2 {
+	margin-top: 17px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+	margin-top: 80px;
+  }
+  
+  .footer-content {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .footer-section {
+	flex: 1;
+	padding: 20px;
+  }
+  
+  .footer-section h2 {
+	margin-bottom: 10px;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+	margin: 5px 0;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+  }
+  
+  .footer-section a:hover {
+	text-decoration: none;
+	color: red;
+  }
+  
+  .footer-bottom {
+	margin-top: 20px;
+	border-top: 1px solid #777;
+	padding-top: 10px;
+  }
+  
+  .footer-bottom p {
+	margin: 0;
+  }
+
+
+
+  .info-box {
+	background-color: #fff;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 30px;
+	margin-bottom: 20px;
+	max-width: 50%;
+	margin-left: 400px;
+}
+.info-box p {
+	font-size: 21px;
+	color: #333;
+		font-family: "Ubuntu", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+}
+
+
+.drum-parts {
+    list-style-type: none;
+    padding: 0;
+	height: 520px;
+	margin-top: 30px;
+	max-width: 70%;
+	margin-left: 210px;
+	
+}
+
+.drum-part {
+    background: #ddd;
+    margin: 10px 0;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.drum-part:hover {
+    background: #bbb;
+    transform: scale(1.05);
+}
+
+.info {
+    display: block;
+    background: #fff;
+    padding: 10px;
+    border-top: 2px solid #333;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.drum-part:hover .info {
+    transform: translateY(0);
+}
